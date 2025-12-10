@@ -1,6 +1,16 @@
 operator = input("Enter operator (+, -, *, /):")
 
-num1 = input("Enter first number:")
-num2 = input("Enter second number:")
+num1 = float(input("Enter first number:"))
+num2 = float(input("Enter second number:"))
 
-print(num1 + num2)
+if operator == '+':
+    print(num1 + num2)
+elif operator == '-':
+    print(num1 - num2)
+elif operator == '*':
+    print(num1 * num2)
+elif operator == '/':
+    if num2 != 0:
+        print(num1 / num2)
+    else:
+        print("Error: Division by zero")
